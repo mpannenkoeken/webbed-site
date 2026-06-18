@@ -1,41 +1,16 @@
 ---
 layout: home
 meta_title: Home
-meta_description: Skeleventy gives you a rock solid foundation to build fast and accessible static websites.
-title: An Eleventy starter skeleton
-sub_heading: Skeleventy gives you a rock solid foundation to build fast and accessible static websites.
+meta_description: Hello and Welcome to my site.
+title: Welcome to the Official Site of Nolan Willoughby.
+sub_heading: As Opposed to the Unofficial Site of Nolan Willoughby, I guess?
 eleventyNavigation:
   key: Home
   order: 1
 ---
 
-## Features
+<img src="/images/meta/da_pups.JPG" style="float: right; margin-left: 15px;" alt="My Pups" height="504" width="378">
 
-- Clean, understated design - a good starting point for a portfolio or blog
-- A minimal build pipeline with [Laravel Mix](https://laravel-mix.com/docs/5.0/basic-example)
-- [Gorko](https://github.com/hankchizljaw/gorko), a smart little Sass-powered utility class generator
-- [Purgecss](https://purgecss.com/) to remove unused CSS
-- HTML minifier
-- Supports ES2017 JavaScript, with Babel compilation
-- SEO friendly page meta, including Open Graph and Twitter
-- Image lazy loading
-- Responsive navigation
-- XML Sitemap
+<p>Hello dear reader! I am Nolan Willoughby, an MSc student in Operational Research at the University of Edinburgh. My research interests lie broadly in applications of OR to topics relating to social good. You can find out more about my work in Projects. I also have a lot of other interests and opinions; you can find that in Blog. More information about me, including potentially a current CV, can be found in About. If you have questions, concerns, or otherwise something to tell me, information about how to get in touch with me is in Contact.</p>
 
-## Getting started
-
-### Prerequisites
-Node `v10+`
-
-### Installation
-
-1. Clone the repo `git clone https://github.com/josephdyer/skeleventy.git`
-2. `cd` into the project folder and run `npm install`
-3. Start the local development server by running `npm run dev` **Tip:** _Eleventy has live reload baked in!_
-
-## Ready to deploy?
-
-The ```npm run production``` command will remove any unused CSS with Purgecss and minify the CSS and JS files.
-
-I highly recommend using [Netlify](https://www.netlify.com) to host your site on, so I've included a ```netlify.toml``` configuration file for your convenience.
-
+idk what else to put here, so for now look at these puppers

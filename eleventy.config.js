@@ -14,6 +14,13 @@ module.exports = config => {
     // Timestamp for datetime element
     config.addFilter('timestamp', dates.timestamp)
 
+	// tryna unslug some slugs?
+	config.addFilter("unslug", function(str) {
+		return str
+			.replace(/-/g, " ")
+			.replace(/\b\w/g, c => c.toUpperCase());
+	});
+
     // Remove whitespace from a string
     config.addNunjucksFilter('spaceless', helpers.spaceless)
 
@@ -39,24 +46,15 @@ module.exports = config => {
 
     })
 
-    // Categories collection
-    config.addCollection('categories', collection => {
+	config.addCollection('projects', collection => {
 
-        const list = new Set()
+        const projects = collection.getFilteredByTag('projects')
 
-        collection.getAll().forEach(item => {
-
-            if (!item.data.tags) return
-
-            item.data.tags
-                .filter(category => !['blog', 'all'].includes(category))
-                .forEach(category => list.add(category))
-
-        })
-
-        return Array.from(list).sort()
+        return projects.reverse()
 
     })
+
+
 
     // Layout aliases
     config.addLayoutAlias('base', 'layouts/base.njk')
@@ -66,6 +64,8 @@ module.exports = config => {
     config.addLayoutAlias('post', 'layouts/post.njk')
     config.addLayoutAlias('contact', 'layouts/contact.njk')
     config.addLayoutAlias('category', 'layouts/category.njk')
+	config.addLayoutAlias('proj', 'layouts/proj.njk')
+	config.addLayoutAlias('projects', 'layouts/projects.njk')
 
     // Include our static assets
     config.addPassthroughCopy('css')

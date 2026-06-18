@@ -18,34 +18,29 @@ layout: base
 
             <div class="post-meta box-flex mt-800 text-400">
 
-                <time class="datetime" datetime="{{ date | timestamp }}">{{ date | dateDisplay }}</time>
+                <time class="datetime" datetime="{{ date | timestamp }}"style="margin-right: 5px;">{{ date | dateDisplay }}</time>
 
                 {% if tags %}
 
-                    <div class="box-flex">
+                    <ul class="categories box-flex">
 
-                        <ul class="categories">
+                        {% for item in tags %}
+                            {% if item != 'blog' %}
+                                <li class="category">
+                                    <a href="/categories/{{ item | slug }}" style="margin-left: 5px">{{ item | capitalize }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
 
-                            {# this will create a comma for multiple category links #}
-                            {% set comma = joiner() %}
-
-                            {% for item in tags %}
-
-                                {%- if item !== 'blog' -%}
-
-                                    <li class="category"><a href="/categories/{{ item }}">{{ comma() }} {{ item | capitalize }}</a></li>
-
-                                {%- endif -%}
-
-                            {% endfor %}
-
-                        </ul>
-
-                    </div>
-
+                    </ul>
+                  
                 {% endif %}
 
             </div>
+
+        <p class="text-400" style="margin-top: 20px;">
+			Back to <a href="/blog/">all blog posts</a>
+		</p>
 
         </header>
 
@@ -54,7 +49,9 @@ layout: base
 
             <figure class="post-image bg-white pt-600 pr-600 pl-600 mb-1000">
 
-                <img data-src="{{ post_image }}" alt="{{ image_alt }}">
+                <p align="center">
+                    <img data-src="{{ post_image }}" alt="{{ image_alt }}">
+				</p>
 
                 {% if image_alt %}
                     <figcaption class="post-image-caption bg-white color-primary pt-600 pb-600 text-400">{{ image_alt }}</figcaption>

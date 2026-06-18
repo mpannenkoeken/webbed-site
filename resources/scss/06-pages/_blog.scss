@@ -8,7 +8,13 @@
     gap: v(gap);
     padding-bottom: 15vh;
 }
-
+.card::before {
+	content: "";
+	display: block;
+	height: 120px;
+	background: #f3f0ff;
+	margin-bottom: 10px;
+}
 .card {
     position: relative;
 

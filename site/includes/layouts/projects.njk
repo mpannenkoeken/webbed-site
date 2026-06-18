@@ -1,0 +1,134 @@
+---
+layout: base
+pagination:
+ data: collections.projects
+ size: 6
+ alias: projects
+---
+<main id="main" class="main box-flex" tabindex="-1">
+
+    <article id="container-centre" class="column centre">
+
+        <header class="page-header inner pt-700 pb-600">
+
+            <h1 class="page-title">{{ title }}</h1>
+
+            {% if content %}
+
+                <div class="sub-heading">{{ content | safe }}</div>
+
+            {% endif %}
+
+        </header>
+
+    </article>
+
+    <div class="bg-white pt-1100 pb-1100">
+
+		<div class="inner mb-600">
+  			<a href="/categories/" class="link color-secondary">
+    		Browse By Category
+  			</a>
+			<p>\n</p>
+		</div>
+
+        <div class="posts inner box-grid">
+
+        {% set pinned = [] %}
+        {% set others = [] %}
+
+        {% for post in collections.projects %}
+            {% if post.data.pinned %}
+                {% set pinned = pinned.concat([post]) %}
+            {% else %}
+                {% set others = others.concat([post]) %}
+            {% endif %}
+        {% endfor %}
+
+		{% for post in pinned %}
+
+			<article class="card">
+
+				<a class="box-block" href="{{ post.url }}">
+
+					{% if post.data.post_image %}
+					<span class="card-header box-block">
+						<img class="card-image" data-src="{{ post.data.post_image }}" alt="{{ post.data.image_alt }}">
+					</span>
+					{% endif %}
+
+					<span class="card-categories box-flex flex-wrap">
+					{% for item in post.data.types %}
+
+						<a class="category bg-secondary color-primary text-400" href="/categories/{{ item | slug }}" style="margin-right: 5px; margin-left: 5px;">{{ item | capitalize}}
+						</a>
+
+					{% endfor %}
+					</span>
+
+				</a>
+
+				<div class="card-content pt-700 pb-900 pl-300 pr-300">
+
+					<h2><a class="card-title-link color-primary weight-regular hover-color-secondary" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+
+					<time class="datetime color-grey text-400" datetime="{{ post.date | timestamp }}">
+						{{ post.date | dateDisplay }}
+					</time>
+
+					<p class="text-400 color-grey mt-200">
+					{{ post.data.meta_description }}
+					</p>
+
+				</div>
+
+			</article>
+
+		{% endfor %}
+
+		{% for post in others %}
+
+			<article class="card">
+
+				<a class="box-block" href="{{ post.url }}">
+
+					{% if post.data.post_image %}
+					<span class="card-header box-block">
+						<img class="card-image" data-src="{{ post.data.post_image }}" alt="{{ post.data.image_alt }}">
+					</span>
+					{% endif %}
+
+					<span class="card-categories box-flex flex-wrap">
+					{% for item in post.data.types %}
+						{% if item !== 'projects' and item !== 'all' %}
+						    <a class="category bg-secondary color-primary text-400" href="/categories/{{ item | slug }}" style="margin-right: 5px; margin-left: 5px;">{{ item | capitalize}}
+						</a>
+						{% endif %}
+					{% endfor %}
+					</span>
+
+				</a>
+
+				<div class="card-content pt-700 pb-900 pl-300 pr-300">
+
+					<h2><a class="card-title-link color-primary weight-regular hover-color-secondary" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+
+					<time class="datetime color-grey text-400" datetime="{{ post.date | timestamp }}">
+						{{ post.date | dateDisplay }}
+					</time>
+
+					<p class="text-400 color-grey mt-200">
+					{{ post.data.meta_description }}
+					</p>
+
+				</div>
+
+			</article>
+
+		{% endfor %}
+
+        </div>
+
+    </div>
+
+</main>

@@ -26,40 +26,37 @@ pagination:
 
     <div class="bg-white pt-1100 pb-1100">
 
+		<div class="inner mb-600">
+			<a href="/categories/" class="link color-secondary">
+			Browse By Category
+			</a>
+			<p>\n</p>
+		</div>
+
         <div class="posts inner box-grid">
 
             {% for post in blogs %}
 
                 <article class="card">
 
-                    {# post image #}
-                    {% if post.data.post_image %}
+                    <a class="box-block" href="{{ post.url }}">
 
-                        <a class="box-block" href="{{ post.url }}">
+                        {% if post.data.post_image %}
+                        <span class="card-header box-block">
+                            <img class="card-image" data-src="{{ post.data.post_image }}" alt="{{ post.data.image_alt }}">
+                        </span>
+                        {% endif %}
 
-                            <span class="card-header box-block">
+                        <span class="card-categories box-flex flex-wrap">
+                        {% for item in post.data.categories %}
 
-                                <span class="card-categories">
+							<a class="category bg-secondary color-primary text-400" href="/categories/{{ item }}">{{ item | capitalize}}
+							</a>
 
-                                    {% for item in post.data.tags %}
+                        {% endfor %}
+                        </span>
 
-                                        {%- if item !== 'blog' -%}
-
-                                            <span class="category box-block bg-secondary color-primary text-300">{{ item | capitalize }}</span>
-
-                                        {%- endif -%}
-
-                                    {% endfor %}
-
-                                </span>
-
-                                <img class="card-image" data-src="{{ post.data.post_image }}" alt="{{ post.data.image_alt }}">
-
-                            </span>
-
-                        </a>
-
-                    {% endif %}
+                    </a>
 
                     <div class="card-content pt-700 pb-900 pl-300 pr-300">
 

@@ -1,19 +1,20 @@
 {
-    "name": "Skeleventy",
-    "url": "https://skeleventy.netlify.app",
+    "name": "Nolan Willoughby",
+    "url": "",
     "author": {
-        "name": "Mill Burray",
-        "handle": "@joe_dyer1"
+        "name": "Nolan Willoughby",
+        "handle": "@nolanbearw"
     },
     "images": {
         "favicon": "/favicon.png",
-        "favicon_svg": "/favicon.svg",
-        "apple_touch_icon": "/images/meta/apple-touch-icon.png",
-        "twitter": "/images/meta/twitter.jpg",
-        "og": "/images/meta/og.jpg"
+        "favicon_svg": "",
+        "apple_touch_icon": "",
+        "twitter": "",
+        "og": ""
     },
     "social_links": {
-        "github": "https://github.com/josephdyer/skeleventy",
-        "twitter": "https://twitter.com/joe_dyer1"
+        "github": "https://github.com/mpannenkoeken",
+		"linkedin": "https://www.linkedin.com/in/nolan-willoughby-71a943213/",
+		"instagram": "https://www.instagram.com/nolanbearw/"
     }
 }
