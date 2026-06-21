@@ -22,9 +22,11 @@ layout: base
 
             {{ content | safe }}
 
-            <form class="form pt-400">
+            <form name="contact" method="POST" data-netlify="true" action="/thanks/" class="form pt-400">
 
-                <div class="row mb-500">
+                <input type="hidden" name="form-name" value="contact">
+				
+				<div class="row mb-500">
                     <label class="text-400 weight-bold" for="name">Name</label>
                     <input class="input width-full" id="name" type="text" name="name" autocomplete="name" required>
                 </div>
