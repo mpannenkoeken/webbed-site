@@ -21,18 +21,6 @@
         <lastmod>2026-04-13</lastmod>
     </url>
     <url>
-        <loc>/about/</loc>
-        <lastmod>2026-04-21</lastmod>
-    </url>
-    <url>
-        <loc>/contact/</loc>
-        <lastmod>2026-04-21</lastmod>
-    </url>
-    <url>
-        <loc>/</loc>
-        <lastmod>2026-04-21</lastmod>
-    </url>
-    <url>
         <loc>/blog/global-challenge-may-2026/</loc>
         <lastmod>2026-05-05</lastmod>
     </url>
@@ -43,6 +31,22 @@
     <url>
         <loc>/blog/2026-scottish-parliament-elections/</loc>
         <lastmod>2026-05-22</lastmod>
+    </url>
+    <url>
+        <loc>/about/</loc>
+        <lastmod>2026-06-18</lastmod>
+    </url>
+    <url>
+        <loc>/contact/</loc>
+        <lastmod>2026-06-18</lastmod>
+    </url>
+    <url>
+        <loc>/</loc>
+        <lastmod>2026-06-18</lastmod>
+    </url>
+    <url>
+        <loc>/thanks/</loc>
+        <lastmod>2026-06-21</lastmod>
     </url>
     <url>
         <loc>/projects/msc-dissertation/</loc>
