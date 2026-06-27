@@ -36,7 +36,7 @@ The biggest takeaway and influence of this project was the intense focus placed 
 
 [Report PDF](/images/projects/mqp/MQP_Final_Report.pdf)
 
-This report is also published in WPI's Digital Collection at [this link](https://digital.wpi.edu/concern/student_works/kw52jd35h?locale=en){:target="_blank"}
+This report is also published in WPI's Digital Collection at [this link](https://digital.wpi.edu/concern/student_works/kw52jd35h?locale=en)
 
 **Poster (PNG)**
 

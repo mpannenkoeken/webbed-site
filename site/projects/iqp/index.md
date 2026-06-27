@@ -13,7 +13,7 @@ tags:
 ---
 
 ## Project Overview
-The Interactive Qualifying Project (IQP) is a unique degree requirement at WPI consisting of a prepatory course on research methods and an interdisciplinary project on an issue relating science, engineering, and technology to society. Our IQP took place at WPI's Global Projects Center in Lyon, France and consisted of performing a case study on the urban waste management system in Lyon. We began by conducting a literature review during the prepatory course covering general waste management techniques, policies, and objectives, which vary depending on the type of waste and urban context. Once in Lyon, we began exploring their existing system in more detail, conducting further literature review as well as site visits and expert interviews. We then synthesized our findings in a report detailing generally accepted best practices for urban waste management and assessing the performance and robustness of the existing system in Lyon. In general, our findings indicated that urban waste management in Lyon is suberb, and other municipalities can and should take inspiration from the Lyonnais system to improve their urban waste management systems. Further details about our findings and the project as a whole can be found at our project's website, [clean-lyon.eu](clean-lyon.eu){:target="_blank"}.
+The Interactive Qualifying Project (IQP) is a unique degree requirement at WPI consisting of a prepatory course on research methods and an interdisciplinary project on an issue relating science, engineering, and technology to society. Our IQP took place at WPI's Global Projects Center in Lyon, France and consisted of performing a case study on the urban waste management system in Lyon. We began by conducting a literature review during the prepatory course covering general waste management techniques, policies, and objectives, which vary depending on the type of waste and urban context. Once in Lyon, we began exploring their existing system in more detail, conducting further literature review as well as site visits and expert interviews. We then synthesized our findings in a report detailing generally accepted best practices for urban waste management and assessing the performance and robustness of the existing system in Lyon. In general, our findings indicated that urban waste management in Lyon is suberb, and other municipalities can and should take inspiration from the Lyonnais system to improve their urban waste management systems. Further details about our findings and the project as a whole can be found at our project's website, [clean-lyon.eu](clean-lyon.eu).
 
 
 ## Personal Reflection
@@ -33,8 +33,8 @@ Another knock-on effect of this project is a new-found respect for translators. 
 
 [Report PDF](/images/projecs/iqp/IQP_Final_Report.pdf)
 
-This report is also published in WPI's Digital Collection at [this link](https://digital.wpi.edu/concern/student_works/nk322j96w?locale=en){:target="_blank"} and available on our project site [here](https://clean-lyon.eu/report){:target="_blank"}
+This report is also published in WPI's Digital Collection at [this link](https://digital.wpi.edu/concern/student_works/nk322j96w?locale=en) and available on our project site [here](https://clean-lyon.eu/report)
 
 **Presentation (Link)**
 
-I no longer have access to the file for our slides from our final presentation; however, they are archived on our project site at [this link](https://clean-lyon.eu/presentation){:target="_blank"}
+I no longer have access to the file for our slides from our final presentation; however, they are archived on our project site at [this link](https://clean-lyon.eu/presentation)
